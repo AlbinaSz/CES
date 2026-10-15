@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CES · Sign in</title>
+  <link rel="stylesheet" href="vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-body-tertiary">
+  <main class="login-card card shadow-sm p-4 p-sm-5">
+    <div class="brand text-primary mb-4" aria-label="CES">C<span>ES</span><span class="brand-dot">.</span></div>
+    <p class="small text-body-secondary fw-semibold mb-2">YOUR SPACE, SIMPLIFIED</p>
+    <h1 class="h3 mb-3">Welcome back.</h1>
+    <p class="text-body-secondary mb-4">Enter your details to sign in to your account.</p>
+
+    <form id="login-form">
+      <div class="mb-3">
+      <label class="form-label" for="username">Username</label>
+      <input class="form-control" id="username" name="username" type="text" placeholder="Enter your username" autocomplete="username" required>
+      </div>
+
+      <div class="mb-4">
+      <label class="form-label" for="password">Password</label>
+      <input class="form-control" id="password" name="password" type="password" placeholder="Enter your password" autocomplete="current-password" required>
+      </div>
+
+      <button class="btn btn-primary w-100" type="submit">Sign in <span aria-hidden="true">→</span></button>
+      <p class="alert alert-info mt-3 mb-0" id="message" role="status" aria-live="polite"></p>
+    </form>
+    <p class="small text-body-secondary border-top pt-3 mt-4 mb-0">Demo screen · Account authentication is not connected.</p>
+  </main>
+  <footer class="small text-body-secondary mt-4 text-center">CES <span aria-hidden="true">/</span> A simple place to start.</footer>
+  <script src="script.js"></script>
+</body>
+</html>
